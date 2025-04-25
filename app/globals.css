@@ -24,3 +24,240 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes loading {
+  0% {
+    transform: translate(-30px);
+  }
+  100% {
+    transform: translate(175px);
+  }
+}
+
+.animatedLoading {
+  width: 9px;
+  height: 100%;
+  background: linear-gradient(to bottom, #2838c7 0%,#5979ef 17%,#869ef3 32%,#869ef3 45%,#5979ef 59%,#2838c7 100%);
+  display: inline-block;
+  margin-right: 2px;
+  animation: loading 2s infinite;
+  animation-timing-function: steps(17);
+}
+.animatedLoadingContainer {
+  width: 175px;
+  height: 20px;
+  border: 2px solid #b2b2b2;
+  border-radius: 7px;
+  margin: 0 auto;
+  padding: 2px 1px;
+  overflow: hidden;
+  font-size: 0;
+}
+.navbar {
+  background: linear-gradient(
+    180deg,
+    rgba(9, 151, 255, 1) 0%,
+    rgba(0, 83, 238, 1) 8%,
+    rgba(0, 80, 238, 1) 40%,
+    rgba(0, 102, 255, 1) 88%,
+    rgba(0, 102, 255, 1) 93%,
+    rgba(0, 91, 255, 1) 95%,
+    rgba(0, 61, 215, 1) 96%,
+    rgba(0, 61, 215, 1) 100%
+  );
+}
+.start {
+  background: linear-gradient(
+    180deg,
+    rgb(38, 165, 255) 0%,
+    rgba(0, 61, 215, 1) 8%,
+
+    rgb(38, 165, 255) 100%
+  );
+}
+.startbot {
+  background: linear-gradient(
+    180deg,
+    rgba(9, 151, 255, 1) 0%,
+    rgba(0, 61, 215, 1) 100%
+  );
+}
+
+.startbutton {
+  background: linear-gradient(to bottom, #5ba825, #499d1d 50%, #3b8e19);
+  border: 1px solid #2f6f13;
+  box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.5), inset -1px -1px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
+  font-family: Tahoma, sans-serif;
+}
+.startbuttona {
+  background: linear-gradient(to bottom, #499d1d, #3b8e19 50%, #2f6f13);
+  border: 1px solid #245a10;
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.3);
+  color: #e0e0e0;
+  font-family: Tahoma, sans-serif;
+}
+
+.trayright {
+  padding: 0px 12px;
+  height: 100%;
+  background: linear-gradient(to bottom, #00A4EF, #0078D7);
+  border: 1px solid #3A8FD7;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+.trayelement {
+  background-color: #3980F4;
+  border: 0.5px solid rgba(35, 75, 157, 0.5);
+  border-radius: 4px;
+  width: 150px;
+  height: 28px;
+  padding: 2px 6px;
+  box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.07), inset -2px -2px 2px rgba(0, 0, 0, 0.1), inset 0px 4px 8px rgba(255, 255, 255, 0.15), inset 1.5px 1.5px 1px rgba(255, 255, 255, 0.25);
+}
+
+.trayelementactive {
+  background-color: #164DBC;
+  border: 0.5px solid rgba(35, 75, 157, 0.5);
+  border-radius: 4px;
+  width: 150px;
+  height: 28px;
+  padding: 2px 6px;
+  box-shadow: inset -1px -1px 0px #0E3CA2, inset 1.5px 1.5px 1px #123D94;
+}
+.window {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: linear-gradient(to bottom, #1A82FF, #1B3273);
+  padding: 4px;
+}
+
+
+.close-icon {
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(to bottom, #ff5a5a, #d40000); /* Red gradient */
+  border: 1px solid #a80000; /* Dark red border */
+  border-radius: 3px; /* Rounded corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff; /* White "X" */
+  font-family: Arial, sans-serif;
+}
+.close-icon:hover {
+  background: linear-gradient(to bottom, #ff7a7a, #e00000); /* Lighter red gradient */
+  border-color: #b80000; /* Slightly lighter border */
+}
+.close-icon:active {
+  background: linear-gradient(to bottom, #d40000, #a80000); /* Darker red gradient */
+  border-color: #8a0000; /* Dark red border */
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.3); /* Pressed effect */
+
+}
+
+.close-icon::before {
+  content: "×";
+  font-size: 36px;
+}
+.minimize-button {
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(to bottom, #4fa9ff, #0078d7); /* Blue gradient */
+  border: 1px solid #005a9e; /* Dark blue border */
+  border-radius: 3px; /* Rounded corners */
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff; /* White icon */
+  font-family: Arial, sans-serif;
+}
+.minimize-button:hover {
+  background: linear-gradient(to bottom, #6fcfff, #4fa9ff); /* Lighter blue gradient */
+  border-color: #0078d7; /* Slightly lighter border */
+}
+.minimize-button:active {
+  background: linear-gradient(to bottom, #0078d7, #005a9e); /* Darker blue gradient */
+  border-color: #004a8f; /* Dark blue border */
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.3); /* Pressed effect */
+}
+.minimize-button::before {
+  content: "–"; /* Unicode character for minimize */
+  font-weight: bold;
+  margin-bottom: -10px;
+}
+
+.fullscreen-button {
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(to bottom, #4fa9ff, #0078d7); /* Blue gradient */
+  border: 1px solid #005a9e; /* Dark blue border */
+  border-radius: 3px; /* Rounded corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 29.5px;
+  color: #fff; /* White icon */
+  font-family: Arial, sans-serif;
+}
+.fullscreen-button:hover {
+  background: linear-gradient(to bottom, #6fcfff, #4fa9ff); /* Lighter blue gradient */
+  border-color: #0078d7; /* Slightly lighter border */
+}
+.fullscreen-button:active {
+  background: linear-gradient(to bottom, #0078d7, #005a9e); /* Darker blue gradient */
+  border-color: #004a8f; /* Dark blue border */
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.3); /* Pressed effect */
+}
+.fullscreen-button::before {
+  content: "◻"; /* Unicode character for fullscreen */
+  font-weight: 600;
+}
+
+.smallscreen-button {
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(to bottom, #4fa9ff, #0078d7); /* Blue gradient */
+  border: 1px solid #005a9e; /* Dark blue border */
+  border-radius: 3px; /* Rounded corners */
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 22px;
+  color: #fff; /* White icon */
+  font-family: Arial, sans-serif;
+}
+.smallscreen-button:hover {
+  background: linear-gradient(to bottom, #6fcfff, #4fa9ff); /* Lighter blue gradient */
+  border-color: #0078d7; /* Slightly lighter border */
+}
+.smallscreen-button:active {
+  background: linear-gradient(to bottom, #0078d7, #005a9e); /* Darker blue gradient */
+  border-color: #004a8f; /* Dark blue border */
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.3); /* Pressed effect */
+}
+.smallscreen-button::before {
+  content: "◻";
+  position: absolute;
+  left: 2px;
+  top: -2px;
+  font-weight: 500;
+}
+.smallscreen-button::after {
+  content: "◻";
+  position: absolute;
+  top: -6px;
+  right: 2px;
+  font-weight: 500;
+}
