@@ -1,6 +1,5 @@
-// hooks/useGlobalContext.ts (or wherever you prefer to keep your hooks)
 import { useContext } from 'react';
-import { GlobalContext, type GlobalContextValue } from '../layout'; // Adjust the import path
+import { GlobalContext, type GlobalContextValue } from '../layout';
 
 export const useGlobalContext = (): GlobalContextValue => {
   const context = useContext(GlobalContext);

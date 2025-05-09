@@ -37,7 +37,15 @@ body {
 .animatedLoading {
   width: 9px;
   height: 100%;
-  background: linear-gradient(to bottom, #2838c7 0%,#5979ef 17%,#869ef3 32%,#869ef3 45%,#5979ef 59%,#2838c7 100%);
+  background: linear-gradient(
+    to bottom,
+    #2838c7 0%,
+    #5979ef 17%,
+    #869ef3 32%,
+    #869ef3 45%,
+    #5979ef 59%,
+    #2838c7 100%
+  );
   display: inline-block;
   margin-right: 2px;
   animation: loading 2s infinite;
@@ -86,7 +94,8 @@ body {
 .startbutton {
   background: linear-gradient(to bottom, #5ba825, #499d1d 50%, #3b8e19);
   border: 1px solid #2f6f13;
-  box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.5), inset -1px -1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.5),
+    inset -1px -1px 2px rgba(0, 0, 0, 0.2);
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
   font-family: Tahoma, sans-serif;
 }
@@ -101,65 +110,66 @@ body {
 .trayright {
   padding: 0px 12px;
   height: 100%;
-  background: linear-gradient(to bottom, #00A4EF, #0078D7);
-  border: 1px solid #3A8FD7;
+  background: linear-gradient(to bottom, #00a4ef, #0078d7);
+  border: 1px solid #3a8fd7;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: Arial, sans-serif;
   font-size: 14px;
   text-align: center;
 }
 .trayelement {
-  background-color: #3980F4;
+  background-color: #3980f4;
   border: 0.5px solid rgba(35, 75, 157, 0.5);
   border-radius: 4px;
   width: 150px;
   height: 28px;
   padding: 2px 6px;
-  box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.07), inset -2px -2px 2px rgba(0, 0, 0, 0.1), inset 0px 4px 8px rgba(255, 255, 255, 0.15), inset 1.5px 1.5px 1px rgba(255, 255, 255, 0.25);
+  box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.07),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.1),
+    inset 0px 4px 8px rgba(255, 255, 255, 0.15),
+    inset 1.5px 1.5px 1px rgba(255, 255, 255, 0.25);
 }
 
 .trayelementactive {
-  background-color: #164DBC;
+  background-color: #164dbc;
   border: 0.5px solid rgba(35, 75, 157, 0.5);
   border-radius: 4px;
   width: 150px;
   height: 28px;
   padding: 2px 6px;
-  box-shadow: inset -1px -1px 0px #0E3CA2, inset 1.5px 1.5px 1px #123D94;
+  box-shadow: inset -1px -1px 0px #0e3ca2, inset 1.5px 1.5px 1px #123d94;
 }
 .window {
   display: flex;
   flex-direction: column;
   gap: 0;
-  background: linear-gradient(to bottom, #1A82FF, #1B3273);
+  background: linear-gradient(to bottom, #1a82ff, #1b3273);
   padding: 4px;
 }
-
 
 .close-icon {
   width: 28px;
   height: 28px;
-  background: linear-gradient(to bottom, #ff5a5a, #d40000); /* Red gradient */
-  border: 1px solid #a80000; /* Dark red border */
-  border-radius: 3px; /* Rounded corners */
+  background: linear-gradient(to bottom, #ff5a5a, #d40000);
+  border: 1px solid #a80000;
+  border-radius: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   font-size: 16px;
-  color: #fff; /* White "X" */
+  color: #fff;
   font-family: Arial, sans-serif;
 }
 .close-icon:hover {
-  background: linear-gradient(to bottom, #ff7a7a, #e00000); /* Lighter red gradient */
-  border-color: #b80000; /* Slightly lighter border */
+  background: linear-gradient(to bottom, #ff7a7a, #e00000);
+  border-color: #b80000;
 }
 .close-icon:active {
-  background: linear-gradient(to bottom, #d40000, #a80000); /* Darker red gradient */
-  border-color: #8a0000; /* Dark red border */
-  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.3); /* Pressed effect */
-
+  background: linear-gradient(to bottom, #d40000, #a80000);
+  border-color: #8a0000;
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 .close-icon::before {
@@ -169,9 +179,9 @@ body {
 .minimize-button {
   width: 28px;
   height: 28px;
-  background: linear-gradient(to bottom, #4fa9ff, #0078d7); /* Blue gradient */
-  border: 1px solid #005a9e; /* Dark blue border */
-  border-radius: 3px; /* Rounded corners */
+  background: linear-gradient(to bottom, #4fa9ff, #0078d7);
+  border: 1px solid #005a9e;
+  border-radius: 3px;
   display: flex;
   align-items: end;
   justify-content: center;
@@ -181,16 +191,16 @@ body {
   font-family: Arial, sans-serif;
 }
 .minimize-button:hover {
-  background: linear-gradient(to bottom, #6fcfff, #4fa9ff); /* Lighter blue gradient */
-  border-color: #0078d7; /* Slightly lighter border */
+  background: linear-gradient(to bottom, #6fcfff, #4fa9ff);
+  border-color: #0078d7;
 }
 .minimize-button:active {
-  background: linear-gradient(to bottom, #0078d7, #005a9e); /* Darker blue gradient */
-  border-color: #004a8f; /* Dark blue border */
-  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.3); /* Pressed effect */
+  background: linear-gradient(to bottom, #0078d7, #005a9e);
+  border-color: #004a8f;
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 .minimize-button::before {
-  content: "–"; /* Unicode character for minimize */
+  content: "–";
   font-weight: bold;
   margin-bottom: -10px;
 }
@@ -198,54 +208,54 @@ body {
 .fullscreen-button {
   width: 28px;
   height: 28px;
-  background: linear-gradient(to bottom, #4fa9ff, #0078d7); /* Blue gradient */
-  border: 1px solid #005a9e; /* Dark blue border */
-  border-radius: 3px; /* Rounded corners */
+  background: linear-gradient(to bottom, #4fa9ff, #0078d7);
+  border: 1px solid #005a9e;
+  border-radius: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   font-size: 29.5px;
-  color: #fff; /* White icon */
+  color: #fff;
   font-family: Arial, sans-serif;
 }
 .fullscreen-button:hover {
-  background: linear-gradient(to bottom, #6fcfff, #4fa9ff); /* Lighter blue gradient */
-  border-color: #0078d7; /* Slightly lighter border */
+  background: linear-gradient(to bottom, #6fcfff, #4fa9ff);
+  border-color: #0078d7;
 }
 .fullscreen-button:active {
-  background: linear-gradient(to bottom, #0078d7, #005a9e); /* Darker blue gradient */
-  border-color: #004a8f; /* Dark blue border */
-  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.3); /* Pressed effect */
+  background: linear-gradient(to bottom, #0078d7, #005a9e);
+  border-color: #004a8f;
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 .fullscreen-button::before {
-  content: "◻"; /* Unicode character for fullscreen */
+  content: "◻";
   font-weight: 600;
 }
 
 .smallscreen-button {
   width: 28px;
   height: 28px;
-  background: linear-gradient(to bottom, #4fa9ff, #0078d7); /* Blue gradient */
-  border: 1px solid #005a9e; /* Dark blue border */
-  border-radius: 3px; /* Rounded corners */
+  background: linear-gradient(to bottom, #4fa9ff, #0078d7);
+  border: 1px solid #005a9e;
+  border-radius: 3px;
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   font-size: 22px;
-  color: #fff; /* White icon */
+  color: #fff;
   font-family: Arial, sans-serif;
 }
 .smallscreen-button:hover {
-  background: linear-gradient(to bottom, #6fcfff, #4fa9ff); /* Lighter blue gradient */
-  border-color: #0078d7; /* Slightly lighter border */
+  background: linear-gradient(to bottom, #6fcfff, #4fa9ff);
+  border-color: #0078d7;
 }
 .smallscreen-button:active {
-  background: linear-gradient(to bottom, #0078d7, #005a9e); /* Darker blue gradient */
-  border-color: #004a8f; /* Dark blue border */
-  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.3); /* Pressed effect */
+  background: linear-gradient(to bottom, #0078d7, #005a9e);
+  border-color: #004a8f;
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 .smallscreen-button::before {
   content: "◻";
